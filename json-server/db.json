@@ -1,0 +1,870 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "123",
+      "fname": "Hoang",
+      "email": "vn@gmail.com",
+      "phone": "0987654321",
+      "role": "Branch",
+      "workplace": "Agent"
+    },
+    {
+      "username": "rau",
+      "password": "123",
+      "fname": "Silk",
+      "email": "ada@gmail.com",
+      "phone": "0931385731",
+      "role": "Manager",
+      "id": 3,
+      "plW2": "undefined"
+    },
+    {
+      "username": "dad",
+      "password": "123",
+      "fname": "BNHài",
+      "email": "ferari03013@gmail.com",
+      "phone": "0931385731",
+      "role": "Branch",
+      "workplace": "Agent",
+      "id": 4
+    },
+    {
+      "username": "cacl",
+      "password": "123",
+      "fname": "Dương HA",
+      "email": "ferari03013@gmail.com",
+      "phone": "0931385731",
+      "role": "Branch",
+      "workplace": "Factory",
+      "id": 5
+    },
+    {
+      "username": "nhuda",
+      "password": "123",
+      "fname": "NHG",
+      "email": "mt@gmail.com",
+      "phone": "0987643213",
+      "role": "Branch",
+      "workplace": "Agent",
+      "id": 6,
+      "plW2": "Agent"
+    },
+    {
+      "username": "ha",
+      "password": "bnm",
+      "fname": "NIH",
+      "email": "nbv@vnu.edu",
+      "phone": "0382341134",
+      "role": "Branch",
+      "workplace": "Warranty",
+      "id": 7
+    },
+    {
+      "username": "admnv",
+      "password": "123",
+      "fname": "Minh khôi",
+      "email": "manhfo@gmail.com",
+      "phone": "0931385731",
+      "role": "Branch",
+      "workplace": "Factory",
+      "id": 8,
+      "plW2": "Factory"
+    }
+  ],
+  "factory": [
+    {
+      "codeFactory": "SX101",
+      "nameFactory": "Zen Plaza",
+      "addressFactory": "Tp Hồ Nội",
+      "id": 1
+    },
+    {
+      "codeFactory": "SX102",
+      "nameFactory": "Đống Đa",
+      "addressFactory": "Tp Hà Nội",
+      "id": 2
+    },
+    {
+      "codeFactory": "SX103",
+      "nameFactory": "Đồng Văn II",
+      "addressFactory": "Hà Nam",
+      "id": 3
+    },
+    {
+      "codeFactory": "SX104",
+      "nameFactory": "Phúc Thắng",
+      "addressFactory": "Vĩnh Phúc",
+      "id": 4
+    },
+    {
+      "codeFactory": "SX004",
+      "nameFactory": "Việt Nam",
+      "addressFactory": "Nam Từ Liêm",
+      "id": 5
+    }
+  ],
+  "productFactoryInStock": [
+    {
+      "codeFactory": "SX101",
+      "nameFactory": "Zen Plaza",
+      "codeProduct": "MVS1005",
+      "yearday": "2022",
+      "id": 1
+    },
+    {
+      "codeFactory": "SX102",
+      "nameFactory": "Đống Đa",
+      "codeProduct": "ML1003",
+      "yearday": "2022",
+      "id": 2
+    },
+    {
+      "codeFactory": "SX101",
+      "nameFactory": "Zen Plaza",
+      "codeProduct": "MA1003",
+      "yearday": "2022",
+      "id": 3
+    },
+    {
+      "codeFactory": "SX102",
+      "nameFactory": "Đống Đa",
+      "codeProduct": "ML1004",
+      "yearday": "2022",
+      "id": 4
+    },
+    {
+      "codeFactory": "SX101",
+      "nameFactory": "Zen Plaza",
+      "codeProduct": "MA1004",
+      "yearday": "2022",
+      "id": 5
+    },
+    {
+      "codeFactory": "SX104",
+      "nameFactory": "Phúc Thắng",
+      "codeProduct": "OC1003",
+      "yearday": "2022",
+      "id": 6
+    },
+    {
+      "codeFactory": "SX104",
+      "nameFactory": "Phúc Thắng",
+      "codeProduct": "OH1003",
+      "yearday": "2022",
+      "id": 7
+    }
+  ],
+  "productFactorySold": [
+    {
+      "codeFactory": "SX101",
+      "nameFactory": "Zen Plaza",
+      "codeProduct": "MVS1000",
+      "yearday": "2022",
+      "dateday": "2021-10-16",
+      "id": 1
+    },
+    {
+      "codeFactory": "SX102",
+      "nameFactory": "Đống Đa",
+      "codeProduct": "MVS1001",
+      "yearday": "2020",
+      "dateday": "2020-06-18",
+      "id": 2
+    },
+    {
+      "codeFactory": "SX101",
+      "nameFactory": "Zen Plaza",
+      "codeProduct": "MVS2000",
+      "yearday": "2022",
+      "dateday": "2022-06-10",
+      "id": 3
+    },
+    {
+      "codeFactory": "SX101",
+      "nameFactory": "Zen Plaza",
+      "codeProduct": "MVS3000",
+      "yearday": "2021",
+      "dateday": "2021-11-25",
+      "id": 4
+    },
+    {
+      "codeFactory": "SX102",
+      "nameFactory": "Đống Đa",
+      "codeProduct": "MVS3001",
+      "yearday": "2022",
+      "dateday": "2022-11-25",
+      "id": 5
+    },
+    {
+      "codeFactory": "SX101",
+      "nameFactory": "Zen Plaza",
+      "codeProduct": "ML1000",
+      "yearday": "2021",
+      "dateday": "2021-10-22",
+      "id": 6
+    },
+    {
+      "codeFactory": "SX102",
+      "nameFactory": "Đống Đa",
+      "codeProduct": "ML2000",
+      "yearday": "2022",
+      "dateday": "2022-01-15",
+      "id": 7
+    },
+    {
+      "codeFactory": "SX102",
+      "nameFactory": "Đống Đa\t",
+      "codeProduct": "ML1001",
+      "yearday": "2022",
+      "dateday": "2022-02-09",
+      "id": 8
+    },
+    {
+      "codeFactory": "SX101",
+      "nameFactory": "Zen Plaza",
+      "codeProduct": "ML2001",
+      "yearday": "2021",
+      "dateday": "2021-11-18",
+      "id": 9
+    },
+    {
+      "codeFactory": "SX101",
+      "nameFactory": "Zen Plaza\t",
+      "codeProduct": "MA1000",
+      "yearday": "2021",
+      "dateday": "2021-06-30",
+      "id": 10
+    },
+    {
+      "codeFactory": "SX102",
+      "nameFactory": "Đống Đa\t",
+      "codeProduct": "MA1001",
+      "yearday": "2022",
+      "dateday": "2022-03-18",
+      "id": 11
+    },
+    {
+      "codeFactory": "SX103",
+      "nameFactory": "Đồng Văn II",
+      "codeProduct": "OC1000",
+      "yearday": "2021",
+      "dateday": "2021-07-15",
+      "id": 12
+    },
+    {
+      "codeFactory": "SX103",
+      "nameFactory": "Đồng Văn II",
+      "codeProduct": "OC1001",
+      "yearday": "2021",
+      "dateday": "2021-12-18",
+      "id": 13
+    },
+    {
+      "codeFactory": "SX103",
+      "nameFactory": "Đồng Văn II",
+      "codeProduct": "OH1000",
+      "yearday": "2022",
+      "dateday": "2022-01-05",
+      "id": 14
+    },
+    {
+      "codeFactory": "SX103",
+      "nameFactory": "Đồng Văn II",
+      "codeProduct": "OH1001",
+      "yearday": "2022",
+      "dateday": "2022-02-03",
+      "id": 15
+    }
+  ],
+  "agent": [
+    {
+      "codeAgent": "DL101",
+      "nameAgent": "Honda Ôtô - Mỹ Đình",
+      "addressAgent": "Tp Hội An",
+      "id": 1
+    },
+    {
+      "codeAgent": "DL102",
+      "nameAgent": "Honda Ôtô - Tây Hồ",
+      "addressAgent": "Tp Hà Nội",
+      "id": 2
+    },
+    {
+      "codeAgent": "DL103",
+      "nameAgent": "Honda Ôtô - An Khánh",
+      "addressAgent": "Tp Hà Nội",
+      "id": 3
+    },
+    {
+      "codeAgent": "DL104",
+      "nameAgent": "Motor Doanh Thu",
+      "addressAgent": "Tp Hà Nội",
+      "id": 4
+    },
+    {
+      "codeAgent": "DL105",
+      "nameAgent": "Motor VAC",
+      "addressAgent": "Tp Hà Nội",
+      "id": 5
+    },
+    {
+      "codeAgent": "DL106",
+      "nameAgent": "HEAD Liên Hiệp Thành",
+      "addressAgent": "Tp Hồ Chí Minh",
+      "id": 6
+    },
+    {
+      "codeAgent": "DL107",
+      "nameAgent": "HEAD Tường Nguyên",
+      "addressAgent": "Tp Hồ Chí Minh",
+      "id": 7
+    },
+    {
+      "codeAgent": "DL108",
+      "nameAgent": "HEAD ITC",
+      "addressAgent": "Tp Hồ Chí Minh",
+      "id": 8
+    },
+    {
+      "codeAgent": "DL109",
+      "nameAgent": "HEAD Minh Khang",
+      "addressAgent": "Tp Hồ Chí Minh",
+      "id": 9
+    }
+  ],
+  "productAgentInStock": [
+    {
+      "codeAgent": "DL104",
+      "nameAgent": "Motor Doanh Thu",
+      "codeProduct": "MVS1001",
+      "brand": "Vision",
+      "version": "Tiêu Chuẩn",
+      "color": "Đen",
+      "price": "30,000,000",
+      "id": 1
+    },
+    {
+      "codeAgent": "DL109",
+      "nameAgent": "HEAD Minh Khang",
+      "codeProduct": "MVS3000",
+      "brand": "Vision",
+      "version": "Thể thao",
+      "color": "Xám Đen",
+      "price": "35,924,727",
+      "id": 2
+    },
+    {
+      "codeAgent": "DL109",
+      "nameAgent": "HEAD Minh Khang",
+      "codeProduct": "ML1001",
+      "brand": "Lead",
+      "version": "Tiêu chuẩn",
+      "color": "Đỏ",
+      "price": "39,000,000",
+      "id": 3
+    },
+    {
+      "codeAgent": "DL101",
+      "nameAgent": "Honda Ôtô - Mỹ Đình",
+      "codeProduct": "OH1000",
+      "brand": "HR-V",
+      "version": "Tiêu chuẩn",
+      "color": "Trắng Bạc",
+      "price": "850,000,000",
+      "id": 5
+    }
+  ],
+  "productAgentSold": [
+    {
+      "nameAgent": "Motor Doanh Thu",
+      "codeProduct": "MVS1000",
+      "brand": "Air Blade",
+      "version": "Tiêu chuẩn",
+      "color": "Đen",
+      "price": "30,721,091",
+      "idCustomer": "1",
+      "orderDate": "2021-12-06",
+      "id": 1
+    },
+    {
+      "nameAgent": "Motor Doanh Thu",
+      "codeProduct": "MVS2000",
+      "brand": "Vision",
+      "version": "Đặc biệt",
+      "color": "Xanh Đen",
+      "price": "33,764,727",
+      "idCustomer": "2",
+      "orderDate": "2022-08-05",
+      "id": 2
+    },
+    {
+      "nameAgent": "Motor Doanh Thu",
+      "codeProduct": "ML2000",
+      "brand": "Lead",
+      "version": "Cao cấp",
+      "color": "Xanh",
+      "price": "41,226,545",
+      "idCustomer": "3",
+      "orderDate": "2022-03-04",
+      "id": 3
+    },
+    {
+      "nameAgent": "Motor Doanh Thu",
+      "codeProduct": "MA1000",
+      "brand": "Air Blade",
+      "version": "Tiêu chuẩn",
+      "color": "Xám Xanh",
+      "price": "55,990,000",
+      "idCustomer": "4",
+      "orderDate": "2021-11-30",
+      "id": 4
+    },
+    {
+      "nameAgent": "HEAD Minh Khang",
+      "codeProduct": "MVS3001",
+      "brand": "Vision",
+      "version": "Thể thao",
+      "color": "Đen",
+      "price": "35,924,727",
+      "idCustomer": "5",
+      "orderDate": "2022-12-01",
+      "id": 5
+    },
+    {
+      "nameAgent": "HEAD Minh Khang",
+      "codeProduct": "ML1000",
+      "brand": "Lead",
+      "version": "Tiêu chuẩn",
+      "color": "Trắng",
+      "price": "39,066,545",
+      "idCustomer": "6",
+      "orderDate": "2022-01-04",
+      "id": 6
+    },
+    {
+      "nameAgent": "HEAD Minh Khang",
+      "codeProduct": "ML2001",
+      "brand": "Lead",
+      "version": "Cao cấp",
+      "color": "Đỏ",
+      "price": "41,226,545",
+      "idCustomer": "7",
+      "orderDate": "2021-12-10",
+      "id": 7
+    },
+    {
+      "nameAgent": "HEAD Minh Khang",
+      "codeProduct": "MA1001",
+      "brand": "Air Blade",
+      "version": "Tiêu chuẩn",
+      "color": "Đen Xám",
+      "price": "55,990,000",
+      "idCustomer": "8",
+      "orderDate": "2022-04-09",
+      "id": 8
+    },
+    {
+      "nameAgent": "Honda Ôtô - Mỹ Đình",
+      "codeProduct": "OC1000",
+      "brand": "City",
+      "version": "Tiêu chuẩn",
+      "color": "Ghi Bạc",
+      "price": "529,000,000",
+      "idCustomer": "9",
+      "orderDate": "2021-08-07",
+      "id": 9
+    },
+    {
+      "nameAgent": "Honda Ôtô - Mỹ Đình",
+      "codeProduct": "OC1001",
+      "brand": "City",
+      "version": "Tiêu chuẩn",
+      "color": "Đen Ánh",
+      "price": "529,000,000",
+      "idCustomer": "10",
+      "orderDate": "2022-01-14",
+      "id": 10
+    },
+    {
+      "nameAgent": "Honda Ôtô - Mỹ Đình\t",
+      "codeProduct": "OH1001",
+      "brand": "HR-V",
+      "version": "Tiêu chuẩn",
+      "color": "Xám",
+      "price": "876,000,000",
+      "idCustomer": "11",
+      "orderDate": "2022-06-19",
+      "id": 11
+    },
+    {
+      "nameAgent": "Motor ",
+      "codeProduct": "MSV4000",
+      "brand": "Vision",
+      "version": "Đen",
+      "color": "Hồng ",
+      "price": "20,000,000",
+      "idCustomer": "7",
+      "orderDate": "2022-12-30",
+      "id": 12
+    },
+    {
+      "nameAgent": "Motor Doanh Thu",
+      "codeProduct": "MVS6789",
+      "brand": "Air Blade",
+      "version": "Tiêu chuẩn ",
+      "color": "Đen",
+      "price": "42,000,000",
+      "idCustomer": "6",
+      "orderDate": "2022-12-30",
+      "id": 13
+    }
+  ],
+  "customer": [
+    {
+      "id": 1,
+      "nameCustomer": "Ngọc Linh",
+      "phone": "0988237954",
+      "cmnd": "038301782252",
+      "address": "Đông Anh, Hà Nội"
+    },
+    {
+      "id": "2",
+      "nameCustomer": "Phước Anh",
+      "phone": "0383911285",
+      "cmnd": "038307825522",
+      "address": "Thạch Hà, Hà Tĩnh"
+    },
+    {
+      "id": "3",
+      "nameCustomer": "Mạnh Nam",
+      "phone": "0872259312",
+      "cmnd": "038302831822",
+      "address": "Cầu Giấy, Hà Nội"
+    },
+    {
+      "id": "4",
+      "nameCustomer": "Minh Anh",
+      "phone": "0874225911",
+      "cmnd": "038308529252",
+      "address": "Thạch Thất, Hà Nội"
+    },
+    {
+      "id": "6",
+      "nameCustomer": "Kim Anh",
+      "phone": "0912875998",
+      "cmnd": "038309375252",
+      "address": "Hà Đông, Hà Nội"
+    },
+    {
+      "id": "7",
+      "nameCustomer": "Ngọc Anh",
+      "phone": "0944875922",
+      "cmnd": "038308558762",
+      "address": "Hồ Tây, Hà Nội"
+    },
+    {
+      "id": "8",
+      "nameCustomer": "Ngọc Ánh",
+      "phone": "0943872555",
+      "cmnd": "038309379321",
+      "address": "Cầu Giấy, Hà Nội"
+    },
+    {
+      "id": "9",
+      "nameCustomer": "Quốc Nam",
+      "phone": "0921785333",
+      "cmnd": "038307824281",
+      "address": "Phố  Cổ, Hà Nội"
+    },
+    {
+      "id": "10",
+      "nameCustomer": "Bảo Nhi",
+      "phone": "0872885921",
+      "cmnd": "038309373851",
+      "address": "Đông Anh, Hà Nội"
+    },
+    {
+      "id": "11",
+      "nameCustomer": "Kim Ngọc",
+      "phone": "0933275918",
+      "cmnd": "038307821953",
+      "address": "Hà Đông, Hà Nội"
+    }
+  ],
+  "productLine": [
+    {
+      "codeProduct": "MVS",
+      "loai": "Xe máy",
+      "brand": "Vision",
+      "version": "Tiêu chuẩn",
+      "trongluong": "94",
+      "size": "1,871 x 686 x1,101",
+      "dungtich": "4,9",
+      "timebh": "3 năm",
+      "price": "30,721,091",
+      "id": 1
+    },
+    {
+      "codeProduct": "ML",
+      "loai": "Xe máy",
+      "brand": "Lead",
+      "version": "Tiêu chuẩn",
+      "trongluong": "113",
+      "size": "1,844 x 680 x 1,130",
+      "dungtich": "6.0",
+      "timebh": "3 năm",
+      "price": "39,066,545",
+      "id": 2
+    },
+    {
+      "codeProduct": "MVS",
+      "loai": "Xe máy",
+      "brand": "Vision",
+      "version": "Đặc biệt",
+      "trongluong": "95",
+      "size": "1,871 x 686 x1,101",
+      "dungtich": "4,9",
+      "timebh": "3 năm",
+      "price": "33,764,727",
+      "id": 3
+    },
+    {
+      "codeProduct": "MVS",
+      "loai": "Xe máy",
+      "brand": "Vision",
+      "version": "Thể thao",
+      "trongluong": "98",
+      "size": "1,925x686x1,126",
+      "dungtich": "4,9",
+      "timebh": "3 năm",
+      "price": "35,924,727",
+      "id": 4
+    },
+    {
+      "codeProduct": "ML",
+      "loai": "Xe máy",
+      "brand": "Lead",
+      "version": "Cao cấp",
+      "trongluong": "113",
+      "size": "1,844 x 680 x 1,130",
+      "dungtich": "6.0",
+      "timebh": "3 năm",
+      "price": "41,226,545",
+      "id": 5
+    },
+    {
+      "codeProduct": "MA",
+      "loai": "Xe máy",
+      "brand": "Air Blade",
+      "version": "Tiêu chuẩn",
+      "trongluong": "113",
+      "size": "1,887x687x1,092",
+      "dungtich": "4,4",
+      "timebh": "3 năm",
+      "price": "55,990,000",
+      "id": 6
+    },
+    {
+      "codeProduct": "MA",
+      "loai": "Xe máy",
+      "brand": "Air Blade",
+      "version": "Đặc biệt",
+      "trongluong": "114",
+      "size": "1,890x686x1,116",
+      "dungtich": "4,4",
+      "timebh": "3 năm",
+      "price": "57,190,000",
+      "id": 7
+    },
+    {
+      "codeProduct": "OC",
+      "loai": "Ô tô",
+      "brand": "City",
+      "version": "Tiêu chuẩn",
+      "trongluong": "1,117",
+      "size": "4,553x1,748x1,467",
+      "dungtich": "40",
+      "timebh": "5 năm",
+      "price": "529,000,000",
+      "id": 8
+    },
+    {
+      "codeProduct": "OH",
+      "loai": "Ô tô",
+      "brand": "HR-V",
+      "version": "Tiêu chuẩn",
+      "trongluong": "1,363",
+      "size": "4,385x1,790x1,590",
+      "dungtich": "40",
+      "timebh": "5 năm",
+      "price": "876,000,000",
+      "id": 9
+    }
+  ],
+  "warranty": [
+    {
+      "codeWarranty": "BH101",
+      "nameWarranty": "Head Vitan",
+      "addressWarranty": "Tp Hà Nội",
+      "id": 1
+    },
+    {
+      "codeWarranty": "BH102",
+      "nameWarranty": "Head Hồng Hạnh",
+      "addressWarranty": "Tp Hà Nội",
+      "id": 3
+    },
+    {
+      "codeWarranty": "BH103",
+      "nameWarranty": "Head Matexim",
+      "addressWarranty": "Tp Hồ Chí Minh",
+      "id": 4
+    },
+    {
+      "codeWarranty": "BH104",
+      "nameWarranty": "Honda Nguyên Hùng",
+      "addressWarranty": "Tp Hà Nội",
+      "id": 5
+    },
+    {
+      "codeWarranty": "BH105",
+      "nameWarranty": "Honda Thành Đạt",
+      "addressWarranty": "Tp Hà Nội",
+      "id": 6
+    }
+  ],
+  "productWarranty": [
+    {
+      "codeProduct": "MVS1000",
+      "codeWarranty": "Head Vitan",
+      "typewarr": "BH lần 1",
+      "status": "Đã xong",
+      "codefactory": "Zen Plaza",
+      "codeagent": "Motor Doanh Thu",
+      "id": 1
+    },
+    {
+      "codeProduct": "MVS2000",
+      "codeWarranty": "Head Matexim",
+      "typewarr": "BH lần 1",
+      "status": "Đã xong",
+      "codefactory": "Zen Plaza",
+      "codeagent": "Motor Doanh Thu",
+      "id": 2
+    },
+    {
+      "codeProduct": "ML2000",
+      "codeWarranty": "Head Vitan",
+      "typewarr": "BH lần 1",
+      "status": "Đã xong",
+      "codefactory": "Đống Đa",
+      "codeagent": "Motor Doanh Thu",
+      "id": 3
+    },
+    {
+      "codeProduct": "MA1000",
+      "codeWarranty": "Head Matexim",
+      "typewarr": "BH lần 1",
+      "status": "Đã xong",
+      "codefactory": "Zen Plaza\t",
+      "codeagent": "Motor Doanh Thu",
+      "id": 4
+    },
+    {
+      "codeProduct": "ML1000",
+      "codeWarranty": "Head Vitan",
+      "typewarr": "BH lần 1",
+      "status": "Đã xong",
+      "codefactory": "Zen Plaza",
+      "codeagent": "HEAD Minh Khang",
+      "id": 5
+    },
+    {
+      "codeProduct": "ML2001",
+      "codeWarranty": "Head Matexim",
+      "typewarr": "BH lần 1",
+      "status": "Đã xong",
+      "codefactory": "Zen Plaza",
+      "codeagent": "HEAD Minh Khang",
+      "id": 6
+    },
+    {
+      "codeProduct": "MA1001",
+      "codeWarranty": "Head Matexim",
+      "typewarr": "BH lần 1",
+      "status": "Đã xong",
+      "codefactory": "Đống Đa",
+      "codeagent": "HEAD Minh Khang",
+      "id": 7
+    },
+    {
+      "codeProduct": "MA1000",
+      "codeWarranty": "Head Matexim",
+      "typewarr": "BH lần 2",
+      "status": "Đã xong",
+      "codefactory": "Zen Plaza",
+      "codeagent": "Motor Doanh Thu",
+      "id": 8
+    },
+    {
+      "codeProduct": "MVS2000",
+      "codeWarranty": "Head",
+      "typewarr": "BH lần 1",
+      "status": "Đã xong ",
+      "codefactory": "Head",
+      "codeagent": "Motor ",
+      "id": 9
+    },
+    {
+      "codeProduct": "MVS1098",
+      "codeWarranty": "Head Vitan",
+      "typewarr": "BH lần 2",
+      "status": "Đang bảo hành ",
+      "codefactory": "Mỹ đình ",
+      "codeagent": "Motor ",
+      "id": 10
+    }
+  ],
+  "historyWarranty": [
+    {
+      "codeProduct": "MVS1003",
+      "codeWarranty": "Việt Mỹ",
+      "typewarr": "BH lần 3",
+      "datewarr": "2022-12-08",
+      "loi": "Hư phanh",
+      "addresswarr": "Đại lý",
+      "id": 2
+    }
+  ],
+  "agentWarranty": [
+    {
+      "codeProduct": "MVS1002",
+      "codeAgent": "Việt Á ",
+      "typewarr": "BH lần 1",
+      "datewarr": "2022-12-30",
+      "codeCustomer": "2",
+      "status": "Thay dầu máy ",
+      "id": 2
+    },
+    {
+      "codeProduct": "MVS1076",
+      "codeAgent": "Việt Á",
+      "typewarr": "BH lần 1 ",
+      "datewarr": "2022-12-31",
+      "codeCustomer": "12",
+      "status": "Thay nhớt ",
+      "id": 3
+    }
+  ],
+  "factoryWarranty": [
+    {
+      "codeProduct": "MVS1003",
+      "codeAgent": "Việt Mỹ",
+      "codeFactory": "Đại Nam",
+      "datewarr": "2022-11-30",
+      "id": 1
+    }
+  ]
+}

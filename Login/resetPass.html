@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="/Login/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="forms">
+            <!-- Verifying -->
+            <div class="form verify">
+                <span class="title">Verify your email</span>
+                <form action="#">
+                    <div class="f">
+                        <div class="input-field">
+                            <input type="text" placeholder="Email Verification" id="verify-email" required>
+                            <i class="uil uil-envelope icon"></i>
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>Error message</small>
+                        </div>
+                        <div class="input-field" id="form-code">
+                            <button type="submit" class="code">Send code</button>
+                        </div>
+                    </div>
+                    <div class="input-field" id="otp">
+                        <input type="text" placeholder="OTP" id="code-otp" required>
+                        <i class="uil uil-envelope icon"></i>
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                    <div class="input-field button" id="form-verify">
+                        <button type="submit" class="text checkCode">Verify</button>
+                    </div>
+                </form>
+
+                <div class="login-signup">
+                    <span class="text">Back to Login !</span>
+                    <a href="index.html" class="login_back">Login</a>
+                    </span>
+                </div>
+            </div>
+            <div class="form reset">
+                <span class="title">Reset Password</span>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="password" placeholder="New Password" id="new-pass" required>
+                        <i class="uil uil-envelope icon"></i>
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" placeholder="Confirm Password" id="confirm-pass" required>
+                        <i class="uil uil-envelope icon"></i>
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                    <div class="input-field button" id="form-resetPass">
+                        <button type="submit" class="reset">Reset Password</button>
+                    </div>
+                </form>
+
+                <div class="login-signup">
+                    <span class="text">Back to Login !</span>
+                    <a href="index.html" class="text">Login</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="/Login/js/reset.js"></script>
+</body>
+
+</html>

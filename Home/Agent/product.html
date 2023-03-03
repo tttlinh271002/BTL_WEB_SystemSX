@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Agent</title>
+
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/sidebar.css">
+    <link rel="stylesheet" href="./css/product.css">
+</head>
+
+<body>
+    <div class="grid-container">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="menu-icon" onclick="openSidebar()">
+                <span class="material-icons-outlined">menu</span>
+            </div>
+            <div class="header-left">
+                <span class="material-icons-outlined">search</span>
+            </div>
+            <div class="header-right">
+                <span class="material-icons-outlined">notifications</span>
+                <span class="material-icons-outlined">email</span>
+                <span class="material-icons-outlined">account_circle</span>
+            </div>
+        </header>
+        <!-- End Header -->
+
+        <!-- Sidebar -->
+        <aside id="sidebar">
+            <div class="sidebar-title">
+                <div class="sidebar-brand">
+                    <span class="material-icons-outlined">store</span> Đại lý
+                </div>
+                <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+            </div>
+
+            <ul class="sidebar-list">
+                <li class="sidebar-list-item">
+                    <a href="agent.html">
+                        <span class="material-icons-outlined">dashboard</span> Dashboard
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="productagentInStock.html">
+                        <span class="material-icons-outlined">inventory_2</span> Sản phẩm trong kho
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="productagentSold.html">
+                        <span class="material-icons-outlined">fact_check</span> Sản phẩm đã bán
+                    </a>
+                </li>
+
+                <li class="sidebar-list-item">
+                    <a href="customer.html">
+                        <span class="material-icons-outlined">supervisor_account</span> Khách hàng
+                    </a>
+                </li>
+
+                <li class="sidebar-list-item">
+                    <a href="agentWarranty.html">
+                        <span class="material-icons-outlined">build</span> Bảo hành
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="product.html">
+                        <span class="material-icons-outlined">call_to_action</span> Dòng sản phẩm
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="/Login/index.html">
+                        <span class="material-icons-outlined"></span> Log out
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <!-- End Sidebar -->
+
+        <!-- Main -->
+        <main class="main-container">
+            <div class="main-title">
+                <p class="font-weight-bold">THÔNG TIN DÒNG SẢN PHẨM</p>
+            </div>
+
+            <div class="form">
+                <div class="form-group">
+                    <label for="codeProduct">Mã dòng SP: </label>
+                    <input id="codeProduct" type="text" class="form-input">
+                    <div class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <label for="loai">Loại xe: </label>
+                    <input id="loai" type="text" class="form-input">
+                    <div class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <label for="brand">Hãng: </label>
+                    <input id="brand" type="text" class="form-input">
+                    <div class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <label for="version">Phiên bản: </label>
+                    <input id="version" type="text" class="form-input">
+                    <div class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <label for="trongluong">Trọng lượng(kg): </label>
+                    <input id="trongluong" type="text" class="form-input">
+                    <div class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <label for="size">DàixRộngxCao(mm):</label>
+                    <input id="size" type="text" class="form-input">
+                    <div class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <label for="dungtich">Dung tích xăng(L): </label>
+                    <input id="dungtich" type="text" class="form-input">
+                    <div class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <label for="timebh">Thời gian bảo hành: </label>
+                    <input id="timebh" type="text" class="form-input">
+                    <div class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <label for="price">Giá: </label>
+                    <input id="price" type="text" class="form-input">
+                    <div class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <input id="index" type="hidden">
+                </div>
+            </div>
+            <button id="save" class="savebtn" onclick="addNew()">Add New</button>
+            <button id="update" class="updatebtn" onclick="changeStudent()" style="display: none;">Update</button>
+            <div class="bang">
+                <label for="search"></label><input type="text" id="search" class="searchbtn" placeholder="search" oninput="searchUser()" />
+                <table border="1" cellspacing="0" cellpadding="10" id="tableContent" class="table">
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Action</th>
+                    </tr>
+                </table>
+                <ul id="pagination"></ul>
+            </div>
+
+            <!-- enddd -->
+        </main>
+        <!-- End Main -->
+
+    </div>
+
+    <!-- Scripts -->
+    <!-- Custom JS -->
+    <script src="./js/sidebar.js"></script>
+    <script src="./js/product.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="/Login/css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="forms">
+
+            <!-- Login Form  -->
+            <div class="form login">
+                <span class="title">Login</span>
+
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" placeholder="Username" id="loginuser" required>
+                        <i class="uil uil-envelope icon"></i>
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Password" id="loginpass" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="logCheck">
+                            <label for="logCheck" class="text">Remember me</label>
+                        </div>
+
+                        <a href="resetPass.html" class="text">Forgot password?</a>
+                    </div>
+
+                    <div class="input-field button" id="form-login">
+                        <button type="submit" class="login">Login</button>
+                    </div>
+                </form>
+
+                <div class="login-signup">
+                    <!-- <span class="text">Don't have an account?
+                        <a href="#" class="text signup-link">Registration</a>
+                    </span> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/Login/js/script.js"></script>
+    <script src="/Login/js/checkLogin.js"></script>
+</body>
+
+</html>

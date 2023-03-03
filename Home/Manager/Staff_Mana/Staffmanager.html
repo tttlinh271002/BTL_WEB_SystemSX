@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/Home/Manager/Staff_Mana/css/staffmana.css">
+    <link rel="stylesheet" href="/Home/Agent/css/sidebar.css">
+</head>
+
+<body>
+    <div class="grid-container">
+        <header class="header">
+            <div class="menu-icon" onclick="openSidebar()">
+                <span class="material-icons-outlined">menu</span>
+            </div>
+            <div class="header-left">
+                <span class="material-icons-outlined">search</span>
+            </div>
+            <div class="header-right">
+                <span class="material-icons-outlined">notifications</span>
+                <span class="material-icons-outlined">email</span>
+                <span class="material-icons-outlined">account_circle</span>
+            </div>
+        </header>
+        <aside id="sidebar">
+            <div class="sidebar-title">
+                <div class="sidebar-brand">
+                    <span class="material-icons-outlined">person</span> Quản lý
+                </div>
+                <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+            </div>
+
+            <ul class="sidebar-list">
+                <li class="sidebar-list-item">
+                    <a href="/Home/Manager/manager.html">
+                        <span class="material-icons-outlined">dashboard</span> Dashboard
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="/Home/Manager/factory.html">
+                        <span class="material-icons-outlined">precision_manufacturing</span> Cơ sở sản xuất
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="/Home/Manager/agent.html">
+                        <span class="material-icons-outlined">store</span> Đại lý
+                    </a>
+                </li>
+
+                <li class="sidebar-list-item">
+                    <a href="/Home/Manager/warranty.html">
+                        <span class="material-icons-outlined">build</span> Bảo hành
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="/Home/Manager/product.html">
+                        <span class="material-icons-outlined">call_to_action</span> Dòng sản phẩm
+                    </a>
+                </li>
+
+                <li class="sidebar-list-item">
+                    <a href="Staffmanager.html">
+                        <span class="material-icons-outlined">groups</span> Nhân viên
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="/Login/index.html">
+                        <span class="material-icons-outlined"></span> Log out
+                    </a>
+                </li>
+
+            </ul>
+        </aside>
+        <main>
+            <section class="header">
+                <div class="search">
+                    <h5>Search</h5>
+                    <input type="text" name="" id="search" placeholder="search" oninput="searchUser()">
+                </div>
+                <div class="Add">
+                    <button type="submit" class="add-staff" id="add-button">Add new</button>
+                </div>
+            </section>
+            <div class="popup">
+                <div class="closeBtn">&times;</div>
+                <div class="container">
+                    <div class="title">Registration</div>
+                    <div class="content">
+                        <form action="#">
+                            <div class="user-details">
+                                <div class="input-box">
+                                    <span class="details">Full Name</span>
+                                    <input type="text" placeholder="Enter your name" id="fname" required>
+
+                                    <small>Error message</small>
+                                </div>
+                                <div class="input-box">
+                                    <span class="details">Username</span>
+                                    <input type="text" placeholder="Enter your username" id="username" required>
+
+                                    <small>Error message</small>
+                                </div>
+                                <div class="input-box">
+                                    <span class="details">Email</span>
+                                    <input type="text" placeholder="Enter your email" id="email" required>
+
+                                    <small>Error message</small>
+                                </div>
+                                <div class="input-box">
+                                    <span class="details">Phone Number</span>
+                                    <input type="text" placeholder="Enter your number" id="phone" required>
+
+                                    <small>Error message</small>
+                                </div>
+                                <div class="input-box">
+                                    <span class="details">Password</span>
+                                    <input type="password" placeholder="Enter your password" id="password" required>
+
+                                    <small>Error message</small>
+                                </div>
+                                <div class="input-box">
+                                    <span class="details">Confirm Password</span>
+                                    <input type="password" placeholder="Confirm your password" id="password2" required>
+
+                                    <small>Error message</small>
+                                </div>
+                                <div class="input-box">
+                                    <span class="details">Work Place</span>
+                                    <input type="text" placeholder="Work Place" id="plW" required>
+                                </div>
+                            </div>
+                            <div class="Role:">
+                                <input type="radio" name="role" id="dot-1" value="Manager">
+                                <input type="radio" name="role" id="dot-2" value="Branch">
+                                <span class="role-title">Role</span>
+                                <div class="category">
+                                    <label for="dot-1">
+                        <span class="dot one"></span>
+                        <span class="role">Manager</span>
+                      </label>
+                                    <label for="dot-2">
+                        <span class="dot two"></span>
+                        <span class="role">Branch</span>
+                        </label>
+                                </div>
+                            </div>
+                            <div class="button">
+                                <input type="submit" id="btnRegis" value="Register">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="popup2">
+                <div class="closeBtn2">&times;</div>
+                <div class="container">
+                    <div class="title">Update Information</div>
+                    <div class="content">
+                        <form action="#">
+                            <div class="user-details">
+                                <div class="input-box">
+                                    <span class="details">Full Name</span>
+                                    <input type="text" placeholder="Enter your name" id="fname2" required>
+                                    <small>Error message</small>
+                                </div>
+                                <div class="input-box">
+                                    <span class="details">Username</span>
+                                    <input type="text" placeholder="Enter your username" id="username2" required>
+                                    <small>Error message</small>
+                                </div>
+                                <div class="input-box">
+                                    <span class="details">Email</span>
+                                    <input type="text" placeholder="Enter your email" id="email2" required>
+                                    <small>Error message</small>
+                                </div>
+                                <div class="input-box">
+                                    <span class="details">Phone Number</span>
+                                    <input type="text" placeholder="Enter your number" id="phone2" required>
+
+                                    <small>Error message</small>
+                                </div>
+                                <div class="input-box">
+                                    <span class="details">Password</span>
+                                    <input type="password" placeholder="Enter your password" id="passwordchange" required>
+
+                                    <small>Error message</small>
+                                </div>
+                                <div class="input-box">
+                                    <span class="details">Confirm Password</span>
+                                    <input type="password" placeholder="Confirm your password" id="re-password" required>
+
+                                    <small>Error message</small>
+                                </div>
+                                <div class="input-box">
+                                    <span class="details">Work Place</span>
+                                    <input type="text" placeholder="Work Place" id="plW2" required>
+                                </div>
+                            </div>
+                            <div class="Role:">
+                                <input type="radio" name="role2" id="dot-3" value="Manager">
+                                <input type="radio" name="role2" id="dot-4" value="Branch">
+                                <span class="role-title">Role</span>
+                                <div class="category">
+                                    <label for="dot-3">
+                        <span class="dot three"></span>
+                        <span class="role">Manager</span>
+                      </label>
+                                    <label for="dot-4">
+                        <span class="dot four"></span>
+                        <span class="role">Branch</span>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <input type="submit" id="btnUpdate" value="Update">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <section class="field">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Work Place</th>
+                        <th>Role</th>
+                        <th>Edit</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                </tbody>
+            </table>
+            <div class="bottom-field">
+                <ul class="pagination">
+                    <li class="prev"><a href="#" id="prev">&#139;</a></li>
+                    <!-- page number here -->
+                    <li class="next"><a href="#" id="next">&#155;</a></li>
+                </ul>
+            </div>
+        </section>
+        </main>
+    </div>
+
+
+
+    <script src="/Home/Agent/js/sidebar.js"></script>
+    <script type="text/javascript" src="/Home/Manager/Staff_Mana/js/handlestaff.js"></script>
+</body>
+
+</html>
